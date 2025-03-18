@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài tập JavaScript 3A</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            width: 300px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Bài tập JavaScript 3A</h1>
+    <input type="text" id="msg03" placeholder="Thông báo sẽ hiển thị ở đây" readonly>
+    <br>
+    <button onclick="hienThiThongBao()">Welcome</button>
+
+    <script>
+        function hienThiThongBao() {
+            document.getElementById("msg03").value = "Welcome to Students";
+            alert("Welcome to Students");
+        }
+    </script>
+
+</body>
+</html>
